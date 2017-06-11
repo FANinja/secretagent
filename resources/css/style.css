@@ -89,6 +89,11 @@ span, li {
   display: inline-block;
 }
 
+.products .container {
+  display:flex;
+  justify-content: space-between;
+}
+
 .product {
   display:inline-flex;
   flex-direction: column;
@@ -104,7 +109,7 @@ span, li {
   max-height: 9rem;
   padding: 2rem 2rem;
   border:4px solid black;
-  max-width: 8em;
+  max-width: 60%;
   align-items:center;
 }
 
@@ -117,6 +122,10 @@ span, li {
   line-height: 2rem;
 }
 
+.glasses img {
+  padding: 4.25rem 3rem;
+}
+
 .particulars {
 margin-top: 2rem;
 display: flex;
@@ -124,14 +133,41 @@ display: flex;
 
 .particulars .container {
   display: inline-flex;
+  width:100%;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.particular {
+    width:35%;
 }
 
 .particulars p {
   color:white;
   background-color: black;
   line-height: 3rem;
+
 }
 
 .particulars span {
   color: black;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  text-align: left;
+}
+
+footer .container {
+  width:100%;
+}
+
+footer p {
+  text-transform: capitalize;
+  text-align: left;
 }
