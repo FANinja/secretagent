@@ -47,7 +47,7 @@ span, li {
 }
 
 .banner-block{
-  width: 50%;
+  width: 25rem;
   line-height: 1;
   background-color: black;
   color: white;
@@ -158,7 +158,7 @@ footer {
   background-color: black;
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 10rem;
   width: 100%;
   text-align: left;
 }
@@ -170,4 +170,31 @@ footer .container {
 footer p {
   text-transform: capitalize;
   text-align: left;
+}
+
+@media only screen and (max-width:1024px) {
+  .product {
+    width: 47%;
+  }
+
+.options {
+
+}
+
+.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .header img {
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .header span {
+    display: none;
+  }
 }
