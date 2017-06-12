@@ -72,45 +72,59 @@ span, li {
 }
 
 .options {
-  width: 100%
-  height: auto;
+  text-align: center;
   background-color: firebrick;
 }
 
-.options li {
-  display: inline-block;
-  text-align: center;
-  margin: 0.75rem 2.5rem;
+.list{
+  width:960px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0.75rem 0px;
+}
+
+.list li {
   text-transform: capitalize;
 }
 
+.smaller {
+  display: none;
+}
+
 .products {
-  width: 100%;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .products .container {
-  display:flex;
+  width:100%;
+  display: inline-flex;
   justify-content: space-between;
 }
 
 .product {
   display:inline-flex;
   flex-direction: column;
-  align-items:center;
-  align-content: center;
-  margin: 3rem 0.5rem;
-  width: 30%;
-  height: 80%;
-
+  margin: 3rem 0px;
 }
 
 .product img {
+  display: inline-flex;
   max-height: 9rem;
   padding: 2rem 2rem;
   border:4px solid black;
-  max-width: 60%;
-  align-items:center;
+  width: auto;
+
+}
+
+.glasses {
+  width:30%;
+}
+
+.glasses img {
+  width:auto;
+  height:240px;
+  object-fit: contain;
 }
 
 .product p {
@@ -118,13 +132,10 @@ span, li {
   background-color: black;
   text-align: center;
   padding: 0.5rem 0px;
-  width:12.5rem;
+  width:100%;
   line-height: 2rem;
 }
 
-.glasses img {
-  padding: 4.25rem 3rem;
-}
 
 .particulars {
 margin-top: 2rem;
@@ -139,14 +150,14 @@ display: flex;
 }
 
 .particular {
-    width:35%;
+  width:35%;
 }
 
 .particulars p {
   color:white;
   background-color: black;
   line-height: 3rem;
-
+  padding-left: 2rem;
 }
 
 .particulars span {
@@ -177,24 +188,99 @@ footer p {
     width: 47%;
   }
 
-.options {
+  .product img {
+    width:auto;
+    height:240px;
+    object-fit: contain;
+  }
 
-}
-
-.glasses {
+  .list {
     display: none;
   }
+
+  .smaller {
+    margin: 0.75rem 0px;
+    display: block;
+    text-transform: capitalize;
+    color: white;
+  }
+
+  .glasses {
+      display: none;
+  }
+
 }
 
 @media only screen and (max-width:470px) {
-  .header img {
-    display:inline-flex;
-    align-items: center;
-    justify-content: center;
+  .banner {
+    height: 15rem;
   }
 
+  .banner-block {
+    top: 10rem;
+  }
 
-  .header span {
+  .banner-title {
+    font-size: 0.77rem;
+    margin: 1rem auto auto 2rem;
+  }
+
+  .banner-spect {
+    font-size: 1rem;
+    margin: 0.25rem 3rem 1rem 2rem;
+  }
+
+  .watch {
     display: none;
   }
+
+  .products .container {
+    display: block;
+    text-align: center;
+  }
+
+  .product {
+    width:90%;
+  }
+
+  .particular {
+    width: 90%;
+    display: block;
+    text-align: left;
+  }
+
+  .particulars .container{
+    display: inline-block;
+
+  }
+
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
